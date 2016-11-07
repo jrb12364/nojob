@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>No Job</title>
+  <meta name="description" content="No Job">
+  <meta name="author" content="Jack Bricker">
+  <meta name="viewport" content="width=device-width, initial-scale=0.6, maximum-scale=0.6, user-scalable=0">
+  <meta property="og:title" content="No Job">
+  <meta property="og:description" content="No Job">
+  <meta property="og:image" content="img/nojob.png">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="256">
+  <meta property="og:image:height" content="256">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="resize.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="js/mobile.js"></script>
+  <script src="js/drag.js"></script>
+  <script src="js/resize.js"></script>
+  <script src="js/three.js"></script>
+  <script src="js/close.js"></script>
+  </head>
+<body>
+    <div class="desktop"></div>
+    <div class="navbar">
+        <img src="img/nav.svg" alt="nav">
+        <div>file</div>
+        <div>edit</div>
+        <div>help</div>
+    </div>
+    <div class="app">
+        <img src="img/music.svg" alt="music">
+        <img src="img/mail.svg" alt="mail">
+            <img src="img/text.svg" alt="text">
+    </div>
+    <!-- MUSIC -->
+    <div id="music" class="window ui-widget-content">
+        <div class="window-bar ui-widget-header">
+            <div class="js-close"></div>
+            <h3>player</h3>
+        </div>
+        <div class="window-content">
+            <iframe width="100%" height="300em" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/284232778&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+        </div>
+    </div>
+    <!-- MAIL -->
+    <div id="mail" class="window ui-widget-content">
+        <div class="window-bar ui-widget-header">
+            <div class="js-close"></div>
+            <h3>mail</h3>
+        </div>
+        <div class="window-content">
+            <h2>Something here</h2>
+        </div>
+    </div>
+    <!-- TEXT -->
+    <div id="text" class="window ui-widget-content">
+        <div class="window-bar ui-widget-header">
+            <div class="js-close"></div>
+            <h3>nojob.txt</h3>
+        </div>
+        <div class="window-content">
+            <h2>No Job</h2>
+            <p>ATL Music</p>
+            <a href="http://soundcloud.com/no_job">http://soundcloud.com/no_job</a>
+        </div>
+    </div>
+</body>
+</html>
