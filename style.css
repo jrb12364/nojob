@@ -1,179 +1,179 @@
+@font-face {
+  font-family: "Chicago FLF";
+  src: url(ChicagoFLF.ttf);
+}
 html, body {
-    height: 100%;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
 }
 html {
-    position: fixed;
+  position: fixed;
 }
 body {
-    background-color: rgba(100, 100, 250, 0.5);
-    font-family: "Chicago FLF", "Lucida Console", Monaco, monospace;
+  background-color: rgba(100, 100, 250, 0.5);
+  font-family: "Chicago FLF", "Lucida Console", Monaco, monospace;
 }
 ::-moz-selection {
-    background: transparent;
+  background: transparent;
 }
 ::selection {
-    background: transparent;
-}
-@font-face {
-    font-family: "Chicago FLF";
-    src: url(ChicagoFLF.ttf);
+  background: transparent;
 }
 .desktop {
-    position: fixed;
-    top: 1.5em;
-    height: 100%;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    z-index: -1;
+  position: fixed;
+  top: 1.5em;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  z-index: -1;
 }
 /* NAVBAR */
 .navbar {
-    position: fixed;
-    height: 1.5em;
-    width: 100%;
-    top: 0;
-    left:0;
-    padding: 0;
-    margin: 0;
-    z-index: 0;
-    padding-left: 0.3em;
-    background-color: rgba(200, 200, 200, 1);
-    border-bottom: 1px solid rgba(50, 50, 50, 1);
-    cursor: default;
+  position: fixed;
+  height: 1.5em;
+  width: 100%;
+  top: 0;
+  left:0;
+  padding: 0;
+  margin: 0;
+  z-index: 0;
+  padding-left: 0.3em;
+  background-color: rgba(200, 200, 200, 1);
+  border-bottom: 1px solid rgba(50, 50, 50, 1);
+  cursor: default;
 }
 .navbar div {
-    display: inline-block;
-    width: auto;
-    height: 1em;
-    padding-left: 1em;
-    border-radius: 0.3em;
-    box-sizing: border-box;
-    cursor: pointer;
-    z-index: 1;
+  display: inline-block;
+  width: auto;
+  height: 1em;
+  padding-left: 1em;
+  border-radius: 0.3em;
+  box-sizing: border-box;
+  cursor: pointer;
+  z-index: 1;
 }
 .navbar img {
-    display: inline-block;
-    width: auto;
-    height: 1.1em;
-    padding-top: 0.3em;
-    padding-left: 1em;
-    box-sizing: border-box;
-    cursor: pointer;
-    z-index: 1;
+  display: inline-block;
+  width: auto;
+  height: 1.1em;
+  padding-top: 0.3em;
+  padding-left: 1em;
+  box-sizing: border-box;
+  cursor: pointer;
+  z-index: 1;
 }
 navbar div:hover {
-    display: inline-block;
-    box-sizing: border-box;
-    background-color: rgba(200, 200, 200, 0.5);
-    z-index: 2;
+  display: inline-block;
+  box-sizing: border-box;
+  background-color: rgba(200, 200, 200, 0.5);
+  z-index: 2;
 }
 /* APPS */
 .app {
-    top: 1em;
-    height: auto;
-    width: 9em;
-    position: fixed;
-    padding: 1em;
-    box-sizing: border-box;
-    right: 1em;
-    cursor: default;
-    z-index: 3;
+  top: 1em;
+  height: auto;
+  width: 9em;
+  position: fixed;
+  padding: 1em;
+  box-sizing: border-box;
+  right: 1em;
+  cursor: default;
+  z-index: 3;
 }
 .app img {
-    padding: 1em;
-    display: block;
-    height: 5em;
-    width: 5em;
-    cursor: pointer;
+  padding: 1em;
+  display: block;
+  height: 5em;
+  width: 5em;
+  cursor: pointer;
 }
 /* WINDOW */
 .window {
-    z-index: 4;
-    margin: 0;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    width: 25em;
-    border: 1px solid rgba(50, 50, 50, 1);
-    border-radius: 0.3em;
-    overflow: hidden;
-    -webkit-transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
-    transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
-    height: auto;
-    box-shadow: 0.2em 0.2em rgba(100, 100, 100, 1);
-    background-color: rgba(240, 240, 240, 1);
-    cursor: default;
+  z-index: 4;
+  margin: 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 25em;
+  border: 1px solid rgba(50, 50, 50, 1);
+  border-radius: 0.3em;
+  overflow: hidden;
+  -webkit-transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+  transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
+  height: auto;
+  box-shadow: 0.2em 0.2em rgba(100, 100, 100, 1);
+  background-color: rgba(240, 240, 240, 1);
+  cursor: default;
 }
 .window a {
-    color: rgba(80, 80, 80, 1);
+  color: rgba(80, 80, 80, 1);
 }
 .window-bar {
-    width: 100%;
-    top: 0;
-    height: 1.5em;
-    background: rgba(200, 200, 200, 1);
-    padding-left: 0.2em;
-    border-bottom: 1px solid rgba(50, 50, 50, 1);
-    cursor: pointer;
+  width: 100%;
+  top: 0;
+  height: 1.5em;
+  background: rgba(200, 200, 200, 1);
+  padding-left: 0.2em;
+  border-bottom: 1px solid rgba(50, 50, 50, 1);
+  cursor: pointer;
 }
 .window-bar div {
-    display: inline-block;
-    width: 1em;
-    height: 1em;
-    border-radius: 0.3em;
-    box-sizing: border-box;
-    cursor: default;
-    border: 1px solid rgba(50, 50, 50, 1);
-    position: relative;
-    top: 0.2em;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  border-radius: 0.3em;
+  box-sizing: border-box;
+  cursor: default;
+  border: 1px solid rgba(50, 50, 50, 1);
+  position: relative;
+  top: 0.2em;
 }
 .window-bar div:after {
-    content: "\2573";
-    width: 1em;
-    top: -0.2em;
-    font-size: 0.9em;
-    color: rgba(50, 50, 50, 1);
-    border-radius: 0.5em;
-    text-overflow: clip;
-    white-space: nowrap;
-    overflow: hidden;
-    position: absolute;
-    cursor: default;
+  content: "\2573";
+  width: 1em;
+  top: -0.2em;
+  font-size: 0.9em;
+  color: rgba(50, 50, 50, 1);
+  border-radius: 0.5em;
+  text-overflow: clip;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  cursor: default;
 }
 .window-bar div:hover {
-    background: rgba(0, 0, 0, 0.15);
+  background: rgba(0, 0, 0, 0.15);
 }
 .window-bar h3 {
-    top: 0;
-    display: inline;
-    box-sizing: border-box;
-    font-size: 0.9em;
+  top: 0;
+  display: inline;
+  box-sizing: border-box;
+  font-size: 0.9em;
 }
 .window-content {
-    text-align: center;
-    position: relative;
+  text-align: center;
+  position: relative;
 }
 .window-content p {
-    margin: 0;
-    color: rgba(0, 0, 0, 1);
-    text-align: center;
-    line-height: 1em;
-    padding-bottom: 1em;
+  margin: 0;
+  color: rgba(0, 0, 0, 1);
+  text-align: center;
+  line-height: 1em;
+  padding-bottom: 1em;
 }
 #music {
-    left: 20%;
-    top: 15%;
+  left: 20%;
+  top: 15%;
 }
 #mail {
-    left: 30%;
-    top: 5%;
+  left: 30%;
+  top: 5%;
 }
 #text {
-    left: 35%;
-    top: -40%;
+  left: 35%;
+  top: -40%;
 }
